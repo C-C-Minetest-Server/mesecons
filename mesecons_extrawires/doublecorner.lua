@@ -41,7 +41,7 @@ for k, state in ipairs(doublecorner_states) do
 			{ name = "jeija_insulated_wire_ends_" .. w2 .. ".png", backface_culling = true },
 		},
 		paramtype = "light",
-		paramtype2 = "4dir",
+		paramtype2 = "facedir",
 		is_ground_content = false,
 		walkable = false,
 		sunlight_propagates = true,
@@ -56,7 +56,7 @@ for k, state in ipairs(doublecorner_states) do
 			},
 		},
 		on_blast = mesecon.on_blastnode,
-		on_rotate = mesecon.on_rotate,
+		on_rotate = mesecon.on_rotate_horiz,
 	})
 end
 

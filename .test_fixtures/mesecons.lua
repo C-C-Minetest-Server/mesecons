@@ -99,9 +99,8 @@ do
 		offstate = "mesecons:test_conductor_rot_off",
 	}}
 	mesecon.register_node("mesecons:test_conductor_rot", {
-		paramtype2 = "4dir",
 		description = "Rotatable Test Conductor",
-		on_rotate = mesecon.on_rotate,
+		on_rotate = mesecon.on_rotate_horiz,
 	}, {mesecons = off_spec}, {mesecons = on_spec})
 end
 
